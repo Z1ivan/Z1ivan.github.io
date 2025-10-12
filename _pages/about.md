@@ -31,7 +31,7 @@ My main research interests lie in generative agents, computational social scienc
 
 [Agent-Based Modelling of High-Rise Building Fires Reveals Self-Rescue Behaviours and Better Fire Protection Designs](https://www.sciencedirect.com/science/article/abs/pii/S0952197623015853)
 
-**Lifan Zheng**, et al.
+**Lifan Zheng (*Corresponding Author*)**, et al.
 
 *Engineering Applications of Artificial Intelligence*, 2024
 
