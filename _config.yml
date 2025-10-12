@@ -9,6 +9,8 @@
 title                    : "Z1ivan Academic Homepage"
 description              : "Computational Social Science Research Center"
 repository               : "z1ivan/z1ivan.github.io"
+url                      : "https://z1ivan.github.io"
+baseurl                  : ""
 google_scholar_stats_use_cdn : true
 
 # google analytics
