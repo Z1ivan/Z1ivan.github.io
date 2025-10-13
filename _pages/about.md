@@ -76,8 +76,8 @@ Special thanks to my friends who have been there through thick and thin, offerin
 
 - *[Tao Shen](https://scholar.google.com/citations?hl=en&user=MeaDj20AAAAJ) - My good brother！*
 - *[Zexi Li](https://zexilee.github.io/about-zexili//) - 佬！*
-- [Judy](https://didizhu-judy.github.io/) - *My good sister！*
-- [Yufan Zhou](https://thzva.github.io/homapage/) - *CS！*
-- [Chenyan Wu](https://asnbby.github.io/) - *He has seven cats!*
+- *[Judy](https://didizhu-judy.github.io/) - My good sister！*   *[Mandy](https://scholar.google.com/citations?hl=en&user=XMz1MpIAAAAJ) - My best senior sister！*
+- *[Yufan Zhou](https://thzva.github.io/homapage/) - CS！*
+- *[Chenyan Wu](https://asnbby.github.io/) - He has seven cats!*
 
 Your presence in my life makes all the difference. Thank you for being part of my journey! 🌟
