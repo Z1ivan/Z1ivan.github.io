@@ -21,6 +21,7 @@ I am currently working as a research assistant at the Computational Social Scien
 My main research interests lie in generative agents, computational social science, intelligent social governance and social simulation systems, with a particular focus on Generative Agent-Based Modeling (GABM). I also have a solid background in computational social science and data analysis, and I am passionate about applying these methods to interdisciplinary research in the humanities and social sciences. Currently, my research focuses on **AI Agents**, and I am actively exploring the paradigm shift from traditional ABM to GABM in social simulation driven by LLMs.
 
 # 🔥 News
+- *2025.11*: &nbsp;🎉🎉 Our paper has been accepted by **AAAI 2026**!
 
 - *2024.01*: &nbsp;🎉🎉 Our paper "Agent-Based Modelling of High-Rise Building Fires Reveals Self-Rescue Behaviours and Better Fire Protection Designs" has been accepted by *Engineering Applications of Artificial Intelligence*!
 
