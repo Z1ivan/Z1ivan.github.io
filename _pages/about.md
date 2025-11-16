@@ -27,6 +27,28 @@ My main research interests lie in generative agents, computational social scienc
 
 # 📝 Publications
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='images/methods.png' alt="Byzantine-paper" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Rethinking the Reliability of Multi-agent System: A Perspective from Byzantine Fault Tolerance](https://arxiv.org/abs/2511.10400)
+
+**Lifan Zheng (*First Author*)**, et al.
+
+*The 40th Annual AAAI Conference on Artificial Intelligence*, 2026
+
+[[Paper]](https://arxiv.org/abs/2511.10400) [[PDF]](files/2511.10400v1.pdf)
+
+- Enhancing multi-agent system reliability through Byzantine fault tolerance analysis of LLM-based agents and confidence-guided consensus mechanisms.
+- Key findings: 
+-- LLM-based agents surpass traditional agents in fault tolerance, handling up to 85.7% malicious nodes (vs. 33% classical limit).
+-- CP-WBFT framework achieves 100% consensus accuracy under extreme Byzantine conditions through confidence-weighted information flow.
+-- Hidden-level confidence probes outperform prompt-level approaches, with topology design significantly impacting system reliability.
+
+</div>
+</div>
+
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EAAI 2024</div><img src='images/fire-paper.png' alt="fire-paper" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
