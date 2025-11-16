@@ -40,9 +40,9 @@ My main research interests lie in generative agents, computational social scienc
 
 - Enhancing multi-agent system reliability through Byzantine fault tolerance analysis of LLM-based agents and confidence-guided consensus mechanisms.
 - Key findings: 
--- LLM-based agents surpass traditional agents in fault tolerance, handling up to 85.7% malicious nodes (vs. 33% classical limit).
--- CP-WBFT framework achieves 100% consensus accuracy under extreme Byzantine conditions through confidence-weighted information flow.
--- Hidden-level confidence probes outperform prompt-level approaches, with topology design significantly impacting system reliability.
+  -- LLM-based agents surpass traditional agents in fault tolerance, handling up to 85.7% malicious nodes (vs. 33% classical limit).
+  -- CP-WBFT framework achieves 100% consensus accuracy under extreme Byzantine conditions through confidence-weighted information flow.
+  -- Hidden-level confidence probes outperform prompt-level approaches, with topology design significantly impacting system reliability.
 
 </div>
 </div>
