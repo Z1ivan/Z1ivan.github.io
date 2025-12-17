@@ -36,7 +36,7 @@ My main research interests lie in generative agents, computational social scienc
 
 *The 40th Annual AAAI Conference on Artificial Intelligence*, 2026
 
-[[Paper]](https://arxiv.org/abs/2511.10400) [[PDF]](files/2511.10400v1.pdf)
+[[Paper]](https://arxiv.org/abs/2511.10400) [[PDF]](files/2511.10400v2.pdf)
 
 - Enhancing multi-agent system reliability through Byzantine fault tolerance analysis of LLM-based agents and confidence-guided consensus mechanisms.
 - Key findings: 
@@ -97,7 +97,7 @@ I would like to express my sincere gratitude to my collaborators who have guided
 
 Special thanks to my friends who have been there through thick and thin, offering encouragement, laughter, and unwavering support:
 
-- *[Tao Shen](https://scholar.google.com/citations?hl=en&user=MeaDj20AAAAJ) - My best senior brother！*  - *[Zexi Li](https://zexilee.github.io/about-zexili//) - 佬！*  - *[Yufan Zhou](https://thzva.github.io/homapage/) - CS！*  - *[Chenyan Wu](https://asnbby.github.io/) - He has seven cats!*
+- *[Tao Shen](https://scholar.google.com/citations?hl=en&user=MeaDj20AAAAJ) - My best senior brother！*  - *[Zexi Li](https://zexilee.github.io/about-zexili//) - 佬！*  - *[Yufan Zhou](https://thzva.github.io/homepage/) - CS！*  - *[Chenyan Wu](https://asnbby.github.io/) - He has seven cats!*
 - *[Judy](https://didizhu-judy.github.io/) - My good sister！*   *[Mandy](https://scholar.google.com/citations?hl=en&user=XMz1MpIAAAAJ) - My senior sister！*
 
 
