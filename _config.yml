@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Z1ivan|郑力凡 - Homepage"
-description              : "Computational Social Science Research Center"
+title                    : "Z1ivan|郑力凡-Homepage"
+description              : "A CS Newbie"
 repository               : "z1ivan/z1ivan.github.io"
 url                      : "https://z1ivan.github.io"
 baseurl                  : ""
@@ -25,12 +25,12 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Lifan Zheng"
   avatar           : "images/avatar.png"
-  bio              : "Research Assistant"
+  bio              : ""
   location         : "Hangzhou, China"
-  employer         : "Zhejiang University"
+  employer         : ""
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=GDaqEpYAAAAJ"
-  email            : "livan@zju.edu.cn"
+  email            : "zlf990222@gmail.com"
   researchgate     :
   uri              :
   bitbucket        :

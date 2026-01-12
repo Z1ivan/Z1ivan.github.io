@@ -16,14 +16,14 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently applying for PhD programs. I previously served as a Research Assistant at the Computational Social Science Research Center at Zhejiang University, under the supervision of [Prof. Chao Wu](https://wuchaozju.github.io/). Prior to this, I obtained a Master's degree in Sociology at Central South University, where I conducted research in computational sociology. Additionally, I obtained a Bachelor's degree in Labor and Social Security from Shanxi University, where I received multiple academic honors.
+I am currently applying for PhD programs. I previously served as a **Research Assistant** at Zhejiang University, collaborating with [Prof. Chao Wu](https://wuchaozju.github.io/). Prior to this, I obtained my Master's degree in Sociology at Central South University, where I conducted research in *computational sociology*.
 
-My main research interests lie in LLMs and Social Simulation. I have a solid background in social computing and data analysis, and I am passionate about applying these methods to interdisciplinary research in the humanities and social sciences.
+My main research interests lie in LLMs, Representation Learning, and Social Simulation. I have a solid background in social computing and data analysis, and I am passionate about applying these methods to interdisciplinary researches.
 
 # 🔥 News
-- *2025.11*: &nbsp;🎉🎉 Our paper "Rethinking the Reliability of Multi-agent System: A Perspective from Byzantine Fault Tolerance" has been accepted by **AAAI 2026**!
+- *2025.11*: &nbsp;🎉🎉 Our paper has been accepted by ***AAAI 2026***!
 
-- *2024.01*: &nbsp;🎉🎉 Our paper "Agent-Based Modelling of High-Rise Building Fires Reveals Self-Rescue Behaviours and Better Fire Protection Designs" has been accepted by *Engineering Applications of Artificial Intelligence*!
+- *2024.01*: &nbsp;🎉🎉 Our paper has been accepted by ***Engineering Applications of Artificial Intelligence***!
 
 # 📝 Publications
 
@@ -75,7 +75,7 @@ My main research interests lie in LLMs and Social Simulation. I have a solid bac
 
 # 📖 Educations
 
-- *2024.11 - Present*, Research Assistant, Computational Social Science Research Center, Zhejiang University
+- *2024.12 - 2025.12*, Research Assistant, Computational Social Science Research Center, Zhejiang University
 - *2021.09 - 2024.07*, M.A. in Computational Sociology, Central South University
 - *2017.09 - 2021.07*, B.M. in Labor and Social Security, Shanxi University
 
