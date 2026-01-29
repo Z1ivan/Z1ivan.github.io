@@ -30,19 +30,13 @@ My main research interests lie in LLMs, Representation Learning, and Social Simu
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='images/methods.png' alt="Byzantine-paper" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Rethinking the Reliability of Multi-agent System: A Perspective from Byzantine Fault Tolerance](https://arxiv.org/abs/2511.10400)
+Rethinking the Reliability of Multi-agent System: A Perspective from Byzantine Fault Tolerance
 
 **Lifan Zheng (*First Author*)**, et al.
 
 *The 40th Annual AAAI Conference on Artificial Intelligence*, 2026
 
 [[Paper]](https://arxiv.org/abs/2511.10400) [[PDF]](files/2511.10400v2.pdf)
-
-- Enhancing multi-agent system reliability through Byzantine fault tolerance analysis of LLM-based agents and confidence-guided consensus mechanisms.
-- Key findings: 
-  -- LLM-based agents surpass traditional agents in fault tolerance, handling up to 85.7% malicious nodes (vs. 33% classical limit).
-  -- CP-WBFT framework achieves 100% consensus accuracy under extreme Byzantine conditions through confidence-weighted information flow.
-  -- Hidden-level confidence probes outperform prompt-level approaches, with topology design significantly impacting system reliability.
 
 </div>
 </div>
@@ -52,16 +46,13 @@ My main research interests lie in LLMs, Representation Learning, and Social Simu
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EAAI 2024</div><img src='images/fire-paper.png' alt="fire-paper" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Agent-Based Modelling of High-Rise Building Fires Reveals Self-Rescue Behaviours and Better Fire Protection Designs](https://www.sciencedirect.com/science/article/abs/pii/S0952197623015853)
+Agent-Based Modelling of High-Rise Building Fires Reveals Self-Rescue Behaviours and Better Fire Protection Designs
 
 **Lifan Zheng (*Corresponding Author*)**, et al.
 
 *Engineering Applications of Artificial Intelligence*, 2024
 
 [[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0952197623015853) [[PDF]](files/fire-paper.pdf)
-
-- Agent-based modeling of high-rise building fires, analyzing self-rescue behaviors and evacuation strategies to reduce fatalities.
-- Key findings: Self-rescue skills, central alarm systems, and social force models significantly improve evacuation outcomes.
 
 </div>
 </div>
@@ -97,12 +88,8 @@ I would like to express my sincere gratitude to my collaborators who have guided
 
 Special thanks to my friends who have been there through thick and thin, offering encouragement, laughter, and unwavering support:
 
-- *[Tao Shen](https://scholar.google.com/citations?hl=en&user=MeaDj20AAAAJ)*   
-- *[Judy](https://didizhu-judy.github.io/)*
-- *[Mandy](https://scholar.google.com/citations?hl=en&user=XMz1MpIAAAAJ)*
-- *[Chenyan Wu](https://asnbby.github.io/)*
-- *[Yufan Zhou](https://thzva.github.io/homepage/)*
-- *[Zexi Li](https://zexilee.github.io/about-zexili//)*   
+- *[Tao Shen](https://scholar.google.com/citations?hl=en&user=MeaDj20AAAAJ)*  - *[Yufan Zhou](https://thzva.github.io/homepage/)*   - *[Zexi Li](https://zexilee.github.io/about-zexili//)*   - *[Chenyan Wu](https://asnbby.github.io/)*
+- *[Judy](https://didizhu-judy.github.io/)* - *[Mandy](https://scholar.google.com/citations?hl=en&user=XMz1MpIAAAAJ)*
 
 
 Your presence in my life makes all the difference. Thank you for being part of my journey! 🌟
