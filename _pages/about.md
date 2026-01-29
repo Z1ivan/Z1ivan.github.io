@@ -88,8 +88,8 @@ I would like to express my sincere gratitude to my collaborators who have guided
 
 Special thanks to my friends who have been there through thick and thin, offering encouragement, laughter, and unwavering support:
 
-- *[Tao Shen](https://scholar.google.com/citations?hl=en&user=MeaDj20AAAAJ)*  - *[Yufan Zhou](https://thzva.github.io/homepage/)*   - *[Zexi Li](https://zexilee.github.io/about-zexili//)*   - *[Chenyan Wu](https://asnbby.github.io/)*
-- *[Judy](https://didizhu-judy.github.io/)* - *[Mandy](https://scholar.google.com/citations?hl=en&user=XMz1MpIAAAAJ)*
+- *[Tao Shen](https://scholar.google.com/citations?hl=en&user=MeaDj20AAAAJ)*   *[Yufan Zhou](https://thzva.github.io/homepage/)*    *[Zexi Li](https://zexilee.github.io/about-zexili//)*    *[Chenyan Wu](https://asnbby.github.io/)*
+- *[Judy](https://didizhu-judy.github.io/)*   *[Mandy](https://scholar.google.com/citations?hl=en&user=XMz1MpIAAAAJ)*
 
 
 Your presence in my life makes all the difference. Thank you for being part of my journey! 🌟
