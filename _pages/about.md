@@ -36,7 +36,7 @@ Rethinking the Reliability of Multi-agent System: A Perspective from Byzantine F
 
 *The 40th Annual AAAI Conference on Artificial Intelligence*, 2026
 
-[[Paper]](https://arxiv.org/abs/2511.10400) [[PDF]](files/2511.10400v2.pdf) [[Code]](https://github.com/Z1ivan/Byzantine-Fault-Tolerance-in-LLM-MAS)
+[[Paper]](files/2511.10400v2.pdf) [[Code]](https://github.com/Z1ivan/Byzantine-Fault-Tolerance-in-LLM-MAS)
 
 </div>
 </div>
@@ -52,7 +52,7 @@ Agent-Based Modelling of High-Rise Building Fires Reveals Self-Rescue Behaviours
 
 *Engineering Applications of Artificial Intelligence*, 2024
 
-[[Paper]](https://www.sciencedirect.com/science/article/abs/pii/S0952197623015853) [[PDF]](files/fire-paper.pdf)
+[[Paper]](files/fire-paper.pdf)
 
 </div>
 </div>
