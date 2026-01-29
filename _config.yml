@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Z1ivan|郑力凡-Homepage"
+title                    : "Z1ivan|郑力凡"
 description              : "A CS Newbie"
 repository               : "z1ivan/z1ivan.github.io"
 url                      : "https://z1ivan.github.io"
@@ -26,7 +26,7 @@ author:
   name             : "Lifan Zheng"
   avatar           : "images/avatar.png"
   bio              : ""
-  location         : "Hangzhou, China"
+  location         : "Nanjing, China"
   employer         : 
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=GDaqEpYAAAAJ"
