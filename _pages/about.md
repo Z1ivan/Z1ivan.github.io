@@ -16,7 +16,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi, I am about to pursue a Ph.D. at Southeast University, with Professor [Fan Liu](https://liufancs.github.io/) as my supervisor. I previously served as a Research Assistant at Zhejiang University. Prior to this, I obtained my Master's degree in Sociology at Central South University, where I conducted research in *computational sociology*.
+Hi, I am about to pursue a Ph.D. at Southeast University, with Prof. [Fan Liu](https://liufancs.github.io/) as my supervisor. I previously served as a Research Assistant at Zhejiang University. Prior to this, I obtained my Master's degree in Sociology at Central South University, where I conducted research in *computational sociology*.
 
 My main research interests lie in LLMs, Representation Learning, and Social Simulation. I have a solid background in social computing and data analysis, and I am passionate about applying these methods to interdisciplinary researches.
 
