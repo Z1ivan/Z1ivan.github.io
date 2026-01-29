@@ -36,7 +36,7 @@ Rethinking the Reliability of Multi-agent System: A Perspective from Byzantine F
 
 *The 40th Annual AAAI Conference on Artificial Intelligence*, 2026
 
-[[Paper]](https://arxiv.org/abs/2511.10400) [[PDF]](files/2511.10400v2.pdf)
+[[Paper]](https://arxiv.org/abs/2511.10400) [[PDF]](files/2511.10400v2.pdf) [[Code]](https://github.com/Z1ivan/Byzantine-Fault-Tolerance-in-LLM-MAS)
 
 </div>
 </div>
