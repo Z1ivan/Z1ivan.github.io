@@ -66,6 +66,7 @@ Agent-Based Modelling of High-Rise Building Fires Reveals Self-Rescue Behaviours
 
 # 📖 Educations
 
+- *2026.03 - present*, PhD in Software Engineering, Southeast University
 - *2024.12 - 2025.12*, Research Assistant, Computational Social Science Research Center, Zhejiang University
 - *2021.09 - 2024.07*, M.A. in Computational Sociology, Central South University
 - *2017.09 - 2021.07*, B.M. in Labor and Social Security, Shanxi University
