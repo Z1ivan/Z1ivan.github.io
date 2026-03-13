@@ -1,0 +1,30 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby / Bundler
+vendor/
+.bundle/
+*.gem
+*.rbc
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python (for local server)
+__pycache__/
+*.py[cod]
+
+# Compat files
+compat_tainted.rb
+
+# Build script
+build_and_open.sh

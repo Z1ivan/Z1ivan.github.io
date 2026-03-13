@@ -1,0 +1,44 @@
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        {% assign home_anchor = "#about" %}
+        {% if page.url contains "acknowledgements" %}
+          {% if page.html_lang == "zh-CN" %}
+            {% assign home_anchor = "/zh/#about" %}
+          {% else %}
+            {% assign home_anchor = "/#about" %}
+          {% endif %}
+        {% endif %}
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="{{ home_anchor }}"><span class="lang-en">Homepage</span><span class="lang-zh">主页</span></a></li>
+          {% for link in site.data.navigation.main %}
+            {% assign resolved_url = link.url %}
+            {% assign is_ack_page = false %}
+            {% if page.url contains "acknowledgements" %}
+              {% assign is_ack_page = true %}
+            {% endif %}
+            {% assign first_char = link.url | slice: 0, 1 %}
+            {% if first_char == "#" and is_ack_page %}
+              {% if page.html_lang == "zh-CN" %}
+                {% assign resolved_url = "/zh/" | append: link.url %}
+              {% else %}
+                {% assign resolved_url = "/" | append: link.url %}
+              {% endif %}
+            {% endif %}
+            {% if link.url == "acknowledgements/" %}
+              {% if page.html_lang == "zh-CN" %}
+                {% assign resolved_url = "/zh/acknowledgements/" %}
+              {% else %}
+                {% assign resolved_url = "/acknowledgements/" %}
+              {% endif %}
+            {% endif %}
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ resolved_url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>

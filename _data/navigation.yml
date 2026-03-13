@@ -1,0 +1,28 @@
+# main links links
+main:
+  - title: "<span class='lang-en'>About</span><span class='lang-zh'>关于</span>"
+    url: "#about"
+
+  - title: "<span class='lang-en'>News</span><span class='lang-zh'>动态</span>"
+    url: "#news"
+
+  - title: "<span class='lang-en'>Publications</span><span class='lang-zh'>论文</span>"
+    url: "#publications"
+
+  - title: "<span class='lang-en'>Projects</span><span class='lang-zh'>项目</span>"
+    url: "#projects"
+
+  - title: "<span class='lang-en'>Honors</span><span class='lang-zh'>荣誉</span>"
+    url: "#honors"
+
+  - title: "<span class='lang-en'>Education</span><span class='lang-zh'>教育背景</span>"
+    url: "#education"
+
+  - title: "<span class='lang-en'>Academic Services</span><span class='lang-zh'>学术服务</span>"
+    url: "#services"
+
+  - title: "<span class='lang-en'>Contact</span><span class='lang-zh'>联系</span>"
+    url: "#contact"
+
+  - title: "<span class='lang-en'>Acknowledgements</span><span class='lang-zh'>致谢</span>"
+    url: "acknowledgements/"
