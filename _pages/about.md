@@ -42,7 +42,8 @@ redirect_from:
 
 # <span class="lang-en">News</span><span class="lang-zh">动态</span>
 <div class="event-list">
-  <div class="event-item"><span class="event-date">2025.11</span><span class="event-desc"> Paper accepted at <strong>AAAI 2026</strong>.</span></div>
+  <div class="event-item"><span class="event-date">2026.04</span><span class="event-desc"> Paper accepted at <strong>ACL 2026</strong> (Findings +2).</span></div>
+  <div class="event-item"><span class="event-date">2025.11</span><span class="event-desc"> Paper accepted by <strong>AAAI 2026</strong>.</span></div>
   <div class="event-item"><span class="event-date">2024.01</span><span class="event-desc"> Paper accepted by <strong>Engineering Applications of Artificial Intelligence</strong>.</span></div>
 </div>
 
