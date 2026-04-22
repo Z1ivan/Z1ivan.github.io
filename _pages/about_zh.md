@@ -114,6 +114,7 @@ html_lang: zh-CN
 <span class="anchor" id="services"></span>
 
 # 学术服务
+- Conference Reviewer: ACL Rolling Review
 - Journal Reviewer: KBS
 
 <span class="anchor" id="contact"></span>

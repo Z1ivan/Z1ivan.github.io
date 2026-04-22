@@ -119,6 +119,7 @@ redirect_from:
 <span class="anchor" id="services"></span>
 
 # <span class="lang-en">Academic Services</span><span class="lang-zh">学术服务</span>
+- Conference Reviewer: ACL Rolling Review
 - Journal Reviewer: KBS
 
 <span class="anchor" id="contact"></span>
