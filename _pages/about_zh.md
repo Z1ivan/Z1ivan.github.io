@@ -21,7 +21,7 @@ html_lang: zh-CN
         <span class="school-logo-fallback">SEU</span>
       </div>
 
-      <p class="hero-intro">导师为<a href="https://liufancs.github.io/"><strong>刘帆</strong></a>教授。十分有幸，我曾和 <a href="https://t1ans1r.github.io/"><strong>田雨</strong></a>研究员合作.此前我在浙江大学担任研究助理，并在中南大学获得计算社会学硕士学位。</p>
+      <p class="hero-intro">Hi，我现在是一名一年级博士生，师从<a href="https://liufancs.github.io/"><strong>刘帆</strong></a>教授。十分有幸，我曾和 <a href="https://t1ans1r.github.io/"><strong>田雨</strong></a>研究员合作。此前我在浙江大学担任研究助理，并在中南大学获得计算社会学硕士学位。</p>
 
       <div class="chip-list">
         <span class="chip">大语言模型</span>
