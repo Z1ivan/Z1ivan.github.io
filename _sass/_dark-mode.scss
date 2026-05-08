@@ -1,0 +1,301 @@
+/* ==========================================================================
+   Dark Mode Styles
+   ========================================================================== */
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: white;
+  border: 2px solid $border-color;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: block !important;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  transition: all 0.3s ease;
+  color: $text-color;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+  &:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.15);
+    border-color: $info-color;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  &:focus {
+    outline: 3px solid $info-color;
+    outline-offset: 2px;
+  }
+  
+  &:active {
+    transform: scale(0.95);
+  }
+  
+  span {
+    font-size: 24px;
+    line-height: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .moon-icon {
+    display: none;
+    opacity: 0;
+  }
+  
+  .sun-icon {
+    display: block;
+    opacity: 1;
+  }
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+  --bg-color: #1a1a1a;
+  --text-color: #e4e4e4;
+  --text-color-secondary: #b0b0b0;
+  --border-color: #333;
+  --code-bg: #2d2d2d;
+  --link-color: #6bb6ff;
+  --link-hover: #8cc9ff;
+  --sidebar-bg: #252525;
+  --card-bg: #222;
+  --shadow: rgba(0, 0, 0, 0.5);
+  
+  /* Toggle button in dark mode */
+  .theme-toggle {
+    color: #e4e4e4;
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .moon-icon {
+      display: block;
+    }
+    
+    .sun-icon {
+      display: none;
+    }
+  }
+  
+  /* Background and text colors */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  
+  .masthead,
+  .page__footer {
+    background-color: #252525;
+    border-bottom-color: var(--border-color);
+  }
+  
+  .masthead {
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .page__footer {
+    border-top: 1px solid var(--border-color);
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background-color: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+    
+    .author__avatar img {
+      border: 2px solid var(--border-color);
+    }
+    
+    .author__name {
+      color: var(--text-color);
+    }
+    
+    .author__bio {
+      color: var(--text-color-secondary);
+    }
+  }
+  
+  /* Links */
+  a {
+    color: var(--link-color);
+    
+    &:hover {
+      color: var(--link-hover);
+    }
+    
+    &:visited {
+      color: #a89bff;
+    }
+  }
+  
+  /* Navigation */
+  .greedy-nav {
+    background: #252525;
+    
+    a {
+      color: var(--text-color);
+      
+      &:hover {
+        color: var(--link-color);
+      }
+    }
+    
+    button {
+      color: var(--text-color);
+      
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  
+  /* Page content */
+  .page {
+    background-color: var(--bg-color);
+  }
+  
+  .page__content {
+    color: var(--text-color);
+    
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--text-color);
+    }
+    
+    p, li {
+      color: var(--text-color);
+    }
+  }
+  
+  /* Code blocks */
+  code {
+    background-color: var(--code-bg);
+    color: #ff79c6;
+  }
+  
+  pre {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    
+    code {
+      background-color: transparent;
+    }
+  }
+  
+  /* Paper boxes */
+  .paper-box {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px var(--shadow);
+  }
+  
+  .paper-box-text {
+    color: var(--text-color);
+  }
+  
+  .badge {
+    background-color: var(--link-color);
+    color: var(--bg-color);
+  }
+  
+  /* Tables */
+  table {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    
+    thead {
+      background-color: #2d2d2d;
+      border-bottom: 2px solid var(--border-color);
+    }
+    
+    th, td {
+      border: 1px solid var(--border-color);
+      color: var(--text-color);
+    }
+    
+    tbody tr:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+  
+  /* Blockquotes */
+  blockquote {
+    border-left-color: var(--link-color);
+    background-color: var(--card-bg);
+    color: var(--text-color-secondary);
+  }
+  
+  /* Horizontal rules */
+  hr {
+    border-color: var(--border-color);
+  }
+  
+  /* Selection */
+  ::selection {
+    background-color: var(--link-color);
+    color: var(--bg-color);
+  }
+  
+  /* Scrollbar (Webkit browsers) */
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--bg-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 5px;
+    
+    &:hover {
+      background-color: #555;
+    }
+  }
+  
+  /* Social icons */
+  .author__urls {
+    a {
+      color: var(--text-color-secondary);
+      
+      &:hover {
+        color: var(--link-color);
+      }
+    }
+  }
+  
+  /* Author profile */
+  .author__content {
+    background-color: var(--sidebar-bg);
+  }
+  
+  /* Archive items */
+  .archive__item-title {
+    color: var(--text-color);
+  }
+  
+  .archive__item-excerpt {
+    color: var(--text-color-secondary);
+  }
+}
+
+/* Smooth transition for theme switching */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.masthead,
+.sidebar,
+.page,
+.page__footer,
+.greedy-nav,
+a,
+.paper-box {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+

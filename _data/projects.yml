@@ -1,0 +1,7 @@
+- title: "Byzantine Fault Tolerance in LLM-based MAS"
+  description: "Open-source research code for reliable multi-agent collaboration under Byzantine settings."
+  tags:
+    - "LLM Agents"
+    - "Robustness"
+    - "Multi-agent Systems"
+  link: "https://github.com/Z1ivan/Byzantine-Fault-Tolerance-in-LLM-MAS"
