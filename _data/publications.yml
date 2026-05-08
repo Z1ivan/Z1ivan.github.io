@@ -1,0 +1,34 @@
+- title: "DPN-LE: Dual Personality Neuron Localization and Editing for Large Language Models"
+  venue: "The 64th Annual Meeting of the Association for Computational Linguistics"
+  year: 2026
+  badge: "ACL 2026"
+  selected: false
+  authors: "**Lifan Zheng (First Author)**, et al."
+  summary: ""
+  image: ""
+  image_alt: ""
+  paper_url: "https://arxiv.org/abs/2604.27929"
+  code_url: "https://github.com/Z1ivan/DPN-LE"
+
+- title: "Rethinking the Reliability of Multi-agent System: A Perspective from Byzantine Fault Tolerance"
+  venue: "The 40th Annual AAAI Conference on Artificial Intelligence"
+  year: 2026
+  badge: "AAAI 2026"
+  selected: true
+  authors: "**Lifan Zheng (First Author)**, et al."
+  summary: "Introduces a Byzantine fault tolerance perspective to evaluate reliability limits in LLM-based multi-agent systems."
+  image: "images/papers/methods-1200.jpg"
+  image_alt: "Byzantine fault tolerance for multi-agent systems"
+  paper_url: "https://ojs.aaai.org/index.php/AAAI/article/view/40806"
+  code_url: "https://github.com/Z1ivan/Byzantine-Fault-Tolerance-in-LLM-MAS"
+
+- title: "Agent-Based Modelling of High-Rise Building Fires Reveals Self-Rescue Behaviours and Better Fire Protection Designs"
+  venue: "Engineering Applications of Artificial Intelligence"
+  year: 2024
+  badge: "EAAI 2024"
+  selected: false
+  authors: "**Lifan Zheng (Corresponding Author)**, et al."
+  summary: "Builds an agent-based framework to study self-rescue behavior and improve high-rise fire protection design."
+  image: "images/papers/fire-paper-1200.jpg"
+  image_alt: "Agent-based simulation of high-rise fire evacuation"
+  paper_url: "files/fire-paper.pdf"
