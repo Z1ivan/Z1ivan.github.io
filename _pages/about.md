@@ -82,26 +82,6 @@ redirect_from:
 {% endfor %}
 </div>
 
-<span class="anchor" id="projects"></span>
-
-# <span class="lang-en">Projects</span><span class="lang-zh">项目</span>
-<div class="project-grid">
-{% for project in site.data.projects %}
-  <div class="project-card">
-    <h3>{{ project.title }}</h3>
-    <p>{{ project.description }}</p>
-    <p class="project-tags">
-      {% for tag in project.tags %}
-      <span>{{ tag }}</span>
-      {% endfor %}
-    </p>
-    {% if project.link %}
-    <p><a href="{{ project.link }}"><span class="lang-en">Project Link</span><span class="lang-zh">项目链接</span></a></p>
-    {% endif %}
-  </div>
-{% endfor %}
-</div>
-
 <span class="anchor" id="honors"></span>
 
 # <span class="lang-en">Honors and Awards</span><span class="lang-zh">荣誉与奖项</span>

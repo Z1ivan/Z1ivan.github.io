@@ -77,26 +77,6 @@ html_lang: zh-CN
 {% endfor %}
 </div>
 
-<span class="anchor" id="projects"></span>
-
-# 项目
-<div class="project-grid">
-{% for project in site.data.projects %}
-  <div class="project-card">
-    <h3>{{ project.title }}</h3>
-    <p>{{ project.description }}</p>
-    <p class="project-tags">
-      {% for tag in project.tags %}
-      <span>{{ tag }}</span>
-      {% endfor %}
-    </p>
-    {% if project.link %}
-    <p><a href="{{ project.link }}">项目链接</a></p>
-    {% endif %}
-  </div>
-{% endfor %}
-</div>
-
 <span class="anchor" id="honors"></span>
 
 # 荣誉与奖项

@@ -325,42 +325,6 @@ h1:before, .anchor:before {
     line-height: 1.6;
 }
 
-.project-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: .9rem;
-    margin-top: .7rem;
-}
-
-.project-card {
-    border: 1px solid var(--brand-border);
-    border-radius: 10px;
-    padding: 1rem 1.05rem;
-    background: #ffffff;
-    animation: fadeUp .52s ease-out both;
-}
-
-.project-card h3 {
-    margin: 0 0 .35rem 0;
-    font-size: 1.17rem;
-}
-
-.project-card p {
-    margin: .32rem 0;
-    font-size: 1rem;
-    line-height: 1.58;
-}
-
-.project-tags span {
-    display: inline-block;
-    margin: 0 .35rem .25rem 0;
-    padding: .16rem .55rem;
-    border-radius: 999px;
-    border: 1px solid #d4dbe7;
-    color: #4c5d74;
-    font-size: .76rem;
-}
-
 .publication-list {
     border-top: 1px solid var(--brand-border);
     margin-top: .4rem;
@@ -442,7 +406,6 @@ body.dark-mode .hero-panel {
 
 body.dark-mode .hero-title,
 body.dark-mode .focus-card h3,
-body.dark-mode .project-card h3,
 body.dark-mode .publication-title {
     color: #e8f1ff;
 }
@@ -460,15 +423,9 @@ body.dark-mode .chip {
     color: #d6e7ff;
 }
 
-body.dark-mode .focus-card,
-body.dark-mode .project-card {
+body.dark-mode .focus-card {
     background: #1b2838;
     border-color: #334a68;
-}
-
-body.dark-mode .project-tags span {
-    border-color: #3f5573;
-    color: #c9d9ef;
 }
 
 body.dark-mode .publication-item {
@@ -495,10 +452,6 @@ body.dark-mode .school-logo-fallback {
 @include breakpoint($medium) {
     .focus-grid {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr 1fr;
     }
 }
 
