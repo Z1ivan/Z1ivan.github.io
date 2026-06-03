@@ -12,8 +12,8 @@ html_lang: zh-CN
     <img class="hero-avatar" src="{{ site.author.avatar | relative_url }}" alt="郑力凡头像" loading="eager">
     <div class="hero-main">
       <p class="hero-title">郑力凡</p>
-      <p class="hero-subtitle">东南大学 软件工程博士生</p>
-      <p class="hero-meta">南京，中国</p>
+      <p class="hero-subtitle">东南大学软件工程博士生</p>
+      <p class="hero-meta">中国南京</p>
       <div class="hero-affiliation">
         {% if site.school_logo and site.school_logo != "" %}
         <img class="school-logo" src="{{ site.school_logo | relative_url }}" alt="Southeast University logo" loading="lazy">
@@ -21,10 +21,11 @@ html_lang: zh-CN
         <span class="school-logo-fallback">SEU</span>
       </div>
 
-      <p class="hero-intro">Hi，我现在是一名一年级博士生，师从<a href="https://liufancs.github.io/"><strong>刘帆</strong></a>教授。十分有幸，我曾和<a href="https://t1ans1r.github.io/"><strong>田雨</strong></a>研究员合作。此前我在浙江大学担任研究助理，并在中南大学获得计算社会学硕士学位。</p>
+      <p class="hero-intro">Hi，我目前是东南大学软件工程博士生，师从<a href="https://liufancs.github.io/"><strong>刘帆</strong></a>教授。我也有幸曾与<a href="https://t1ans1r.github.io/"><strong>田雨</strong></a>研究员合作。进入东南大学之前，我曾在浙江大学担任研究助理，并在中南大学获得计算社会学硕士学位。</p>
 
       <div class="chip-list">
         <span class="chip">大语言模型</span>
+        <span class="chip">AI 智能体</span>
         <span class="chip">表示学习</span>
         <span class="chip">社会仿真</span>
       </div>
@@ -38,8 +39,9 @@ html_lang: zh-CN
 
 # 动态
 <div class="event-list">
-  <div class="event-item"><span class="event-date">2025.11</span><span class="event-desc"> 论文被 <strong>AAAI 2026</strong> 接收。</span></div>
-  <div class="event-item"><span class="event-date">2024.01</span><span class="event-desc"> 论文被 <strong>Engineering Applications of Artificial Intelligence</strong> 接收。</span></div>
+  <div class="event-item"><span class="event-date">2026.04</span><span class="event-desc"> 论文被 <strong>ACL 2026</strong> 接收（Findings +2）。</span></div>
+  <div class="event-item"><span class="event-date">2025.11</span><span class="event-desc"> 论文被 <strong>AAAI 2026</strong> 录用。</span></div>
+  <div class="event-item"><span class="event-date">2024.01</span><span class="event-desc"> 论文被 <strong>Engineering Applications of Artificial Intelligence</strong> 录用。</span></div>
 </div>
 
 <span class="anchor" id="publications"></span>
@@ -86,20 +88,20 @@ html_lang: zh-CN
 <span class="anchor" id="education"></span>
 
 # 教育背景
-- *2026.03 - present:* 东南大学 软件工程博士
-- *2024.12 - 2025.12:* 浙江大学 计算社会科学研究中心 研究助理
-- *2021.09 - 2024.07:* 中南大学 计算社会学硕士
-- *2017.09 - 2021.07:* 山西大学 劳动与社会保障本科
+- *2026.03 - 至今:* 东南大学软件工程博士生
+- *2024.12 - 2025.12:* 浙江大学计算社会科学研究中心研究助理
+- *2021.09 - 2024.07:* 中南大学计算社会学硕士
+- *2017.09 - 2021.07:* 山西大学劳动与社会保障本科
 
 <span class="anchor" id="services"></span>
 
 # 学术服务
-- Conference Reviewer: ACL Rolling Review
-- Journal Reviewer: KBS
+- 会议审稿：ACL Rolling Review
+- 期刊审稿：Knowledge-Based Systems (KBS)
 
 <span class="anchor" id="contact"></span>
 
 # 联系方式
 - 邮箱: [z1ivan@seu.edu.cn](mailto:z1ivan@seu.edu.cn)
-- 合作请邮件联系并附上研究主题与时间安排。
-- 致谢: [查看独立页面](/zh/acknowledgements/)
+- 如有合作意向，欢迎邮件联系，并请附上研究主题与大致时间安排。
+- 致谢: [致谢页面](/zh/acknowledgements/)

@@ -24,7 +24,7 @@ redirect_from:
         <span class="school-logo-fallback">SEU</span>
       </div>
 
-      <p class="hero-intro">Hi, I am a PhD student under the supervision of Prof. <a href="https://liufancs.github.io/"><strong>Fan Liu</strong></a>. Fortunately, I cooperated with <a href="https://t1ans1r.github.io/"><strong>Yu Tian</strong></a>. I previously worked as a Research Assistant at Zhejiang University and received my M.A. in Computational Sociology from Central South University.</p>
+      <p class="hero-intro">Hi, I am a PhD student in Software Engineering at Southeast University, advised by Prof. <a href="https://liufancs.github.io/"><strong>Fan Liu</strong></a>. I have also had the opportunity to collaborate with <a href="https://t1ans1r.github.io/"><strong>Yu Tian</strong></a>. Before joining SEU, I worked as a Research Assistant at Zhejiang University and received my M.A. in Computational Sociology from Central South University.</p>
 
       <div class="chip-list">
         <span class="chip">LLMs</span>
@@ -100,7 +100,7 @@ redirect_from:
 
 # <span class="lang-en">Academic Services</span><span class="lang-zh">学术服务</span>
 - Conference Reviewer: ACL Rolling Review
-- Journal Reviewer: KBS
+- Journal Reviewer: Knowledge-Based Systems (KBS)
 
 <span class="anchor" id="contact"></span>
 
