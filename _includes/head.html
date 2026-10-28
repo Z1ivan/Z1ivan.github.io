@@ -8,6 +8,7 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  try { document.documentElement.dataset.theme = localStorage.getItem('theme-preference') === 'dark' ? 'dark' : 'light'; } catch (error) {}
 </script>
 
 <!-- For all browsers -->

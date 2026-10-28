@@ -10,24 +10,26 @@ layout: compress
   </head>
 
   <body class="{% unless page.author_profile or layout.author_profile or page.sidebar %}no-sidebar{% endunless %}">
-
+    <a class="skip-link" href="#main">{% if page.html_lang == 'zh-CN' %}跳转到正文{% else %}Skip to content{% endif %}</a>
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    <div id="main" role="main">
+    <main id="main" tabindex="-1">
       {% include sidebar.html %}
     
       <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
         <div class="page__inner-wrap">
           <section class="page__content" itemprop="text">
+            {% if page.back_link %}<p class="back-link"><a href="{{ page.back_link | relative_url }}">{{ page.back_label }}</a></p>{% endif %}
+            {% if page.title and page.title != "" %}<h1 class="document-title">{{ page.title }}</h1>{% endif %}
             {{ content }}
           </section>
         </div>
       </article>
-    </div>
+    </main>
 
-    {% include site-controls.html %}
+    {% include site-footer.html %}
     {% include scripts.html %}
 
   </body>

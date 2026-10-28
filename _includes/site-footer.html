@@ -1,0 +1,5 @@
+<footer class="site-footer">
+  <span>© {{ 'now' | date: '%Y' }} {% if page.html_lang == 'zh-CN' %}郑力凡{% else %}Lifan Zheng{% endif %}</span>
+  <p lang="en" title="Siegfried Sassoon">In me the tiger sniffs the rose.</p>
+  <a href="{% if page.html_lang == 'zh-CN' %}{{ '/zh/acknowledgements/' | relative_url }}{% else %}{{ '/acknowledgements/' | relative_url }}{% endif %}">{% if page.html_lang == 'zh-CN' %}致谢{% else %}Acknowledgements{% endif %}</a>
+</footer>

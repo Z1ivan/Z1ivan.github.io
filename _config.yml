@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Z1ivan|郑力凡"
-description              : "Personal academic homepage of Lifan Zheng, focusing on LLMs, representation learning, and social simulation."
+description              : "Lifan Zheng, PhD student at Southeast University. Research interests: LLMs, Agents, VLA, and WAM."
 repository               : "z1ivan/z1ivan.github.io"
 url                      : "https://z1ivan.github.io"
 baseurl                  : ""

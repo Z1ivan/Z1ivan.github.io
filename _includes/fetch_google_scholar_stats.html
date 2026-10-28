@@ -1,29 +1,22 @@
 <script>
-    $(document).ready(function () {
-        {% if site.google_scholar_stats_use_cdn %}
-        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
-        {% else %}
-        var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
-        {% endif %}
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json")
-            .done(function (data) {
-                var totalCitation = data['citedby'];
-                var totalCitElement = document.getElementById('total_cit');
-                if (totalCitElement) {
-                    totalCitElement.innerHTML = totalCitation;
-                }
-
-                var publications = data['publications'] || {};
-                var citationEles = document.getElementsByClassName('show_paper_citations');
-                Array.prototype.forEach.call(citationEles, function (element) {
-                    var paperId = element.getAttribute('data');
-                    if (publications[paperId] && publications[paperId]['num_citations'] != null) {
-                        element.innerHTML = '| Citations: ' + publications[paperId]['num_citations'];
-                    }
-                });
-            })
-            .fail(function () {
-                // Ignore network/data failures to avoid breaking the page.
-            });
-    })
+(function () {
+  if (!document.querySelector('#total_cit, .show_paper_citations')) return;
+  {% if site.google_scholar_stats_use_cdn %}
+  var source = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@google-scholar-stats/gs_data.json';
+  {% else %}
+  var source = 'https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/gs_data.json';
+  {% endif %}
+  fetch(source).then(function (response) {
+    if (!response.ok) throw new Error('Citation data unavailable');
+    return response.json();
+  }).then(function (data) {
+    var total = document.getElementById('total_cit');
+    if (total) total.textContent = data.citedby;
+    var publications = data.publications || {};
+    document.querySelectorAll('.show_paper_citations').forEach(function (element) {
+      var paper = publications[element.getAttribute('data')];
+      if (paper && paper.num_citations != null) element.textContent = '| Citations: ' + paper.num_citations;
+    });
+  }).catch(function () { /* Citation data are optional. */ });
+})();
 </script>

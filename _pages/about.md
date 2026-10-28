@@ -1,110 +1,63 @@
 ---
 permalink: /
 title: ""
-excerpt: ""
+excerpt: "Lifan Zheng — research on LLMs, Agents, VLA, and WAM."
 author_profile: false
 html_lang: en
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
-<span class="anchor" id="about"></span>
-
-<div class="hero-panel">
-  <div class="hero-top">
-    <img class="hero-avatar" src="{{ site.author.avatar | relative_url }}" alt="Lifan Zheng avatar" loading="eager">
-    <div class="hero-main">
-      <p class="hero-title">Lifan Zheng</p>
-      <p class="hero-subtitle">Ph.D. Student, Software Engineering · Southeast University</p>
-      <p class="hero-meta">Nanjing, China</p>
-      <div class="hero-affiliation">
-        {% if site.school_logo and site.school_logo != "" %}
-        <img class="school-logo" src="{{ site.school_logo | relative_url }}" alt="Southeast University logo" loading="lazy">
-        {% endif %}
-        <span class="school-logo-fallback">SEU</span>
-      </div>
-
-      <p class="hero-intro">Hi, I am a PhD student in Software Engineering at Southeast University, advised by Prof. <a href="https://liufancs.github.io/"><strong>Fan Liu</strong></a>. I have also had the opportunity to collaborate with <a href="https://t1ans1r.github.io/"><strong>Yu Tian</strong></a>. Before joining SEU, I worked as a Research Assistant at Zhejiang University and received my M.A. in Computational Sociology from Central South University.</p>
-
-      <div class="chip-list">
-        <span class="chip">LLMs</span>
-        <span class="chip">AI Agents</span>
-        <span class="chip">Representation Learning</span>
-        <span class="chip">Social Simulation</span>
-      </div>
-
-      <p class="hero-links"><a href="mailto:z1ivan@seu.edu.cn">Email</a> · <a href="https://scholar.google.com/citations?user=GDaqEpYAAAAJ">Google Scholar</a> · <a href="https://github.com/z1ivan">GitHub</a> · <a href="https://orcid.org/0000-0001-6633-4570">ORCID</a> · <a href="https://www.linkedin.com/in/zheng-lifan-b42369318">LinkedIn</a></p>
-    </div>
+<section id="about" class="hero-panel" aria-labelledby="profile-name">
+  <div class="hero-copy">
+    <h1 id="profile-name" class="hero-title">Lifan Zheng <span lang="zh-CN">郑力凡</span></h1>
+    <p class="hero-subtitle">PhD student in Software Engineering</p>
+    <p class="hero-affiliation">Southeast University <span>Nanjing, China</span></p>
+    <p class="hero-intro">I am a PhD student at Southeast University, advised by Prof. <a href="https://liufancs.github.io/">Fan Liu</a>. I have also had the opportunity to collaborate with <a href="https://t1ans1r.github.io/">Yu Tian</a>. Previously, I was a Research Assistant at Zhejiang University and received my M.A. in Computational Sociology from Central South University.</p>
+    <p class="hero-note">My path to engineering began in the social sciences. I carry that curiosity with me.</p>
+    <div class="research-line"><span>Research interests</span><ul aria-label="Research interests">{% for interest in site.data.profile.research_interests %}<li>{{ interest }}</li>{% endfor %}</ul></div>
+    <div class="text-links hero-links"><a href="mailto:z1ivan@seu.edu.cn">Email</a><a href="https://scholar.google.com/citations?user=GDaqEpYAAAAJ">Scholar</a><a href="https://github.com/z1ivan">GitHub</a><a href="https://orcid.org/0000-0001-6633-4570">ORCID</a><a href="https://www.linkedin.com/in/zheng-lifan-b42369318">LinkedIn</a></div>
   </div>
-</div>
+  <figure class="hero-portrait"><img src="{{ site.author.avatar | relative_url }}" alt="Lifan Zheng's illustrated portrait" width="480" height="480" loading="eager" fetchpriority="high"><figcaption>Engineering, with a humanist's curiosity.</figcaption></figure>
+</section>
 
-<span class="anchor" id="news"></span>
-
-# <span class="lang-en">News</span><span class="lang-zh">动态</span>
-<div class="event-list">
-  <div class="event-item"><span class="event-date">2026.04</span><span class="event-desc"> Paper accepted by <strong>ACL 2026</strong> (Findings +2).</span></div>
-  <div class="event-item"><span class="event-date">2025.11</span><span class="event-desc"> Paper accepted by <strong>AAAI 2026</strong>.</span></div>
-  <div class="event-item"><span class="event-date">2024.01</span><span class="event-desc"> Paper accepted by <strong>Engineering Applications of Artificial Intelligence</strong>.</span></div>
-</div>
-
-<span class="anchor" id="publications"></span>
-
-# <span class="lang-en">Publications</span><span class="lang-zh">论文</span>
-## <span class="lang-en">Selected Publications</span><span class="lang-zh">精选论文</span>
-{% for pub in site.data.publications %}
-{% if pub.selected %}
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">{{ pub.badge }}</div><img src='{{ pub.image | relative_url }}' alt="{{ pub.image_alt }}" loading="lazy" decoding="async" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-{{ pub.title }}
-
-{{ pub.authors }}
-
-*{{ pub.venue }}*, {{ pub.year }}
-
-{{ pub.summary }}
-
-[[Paper]]({{ pub.paper_url | relative_url }}){% if pub.code_url %} [[Code]]({{ pub.code_url }}){% endif %}
-
-</div>
-</div>
-{% endif %}
-{% endfor %}
-
-## <span class="lang-en">All Publications</span><span class="lang-zh">全部论文</span>
-<div class="publication-list">
-{% for pub in site.data.publications %}
-  <div class="publication-item">
-    <p class="publication-title">{{ pub.title }}</p>
-    <p class="publication-meta">{{ pub.authors | markdownify | remove: '<p>' | remove: '</p>' }} · <em>{{ pub.venue }}</em>, {{ pub.year }}</p>
-    <p class="publication-links"><a href="{{ pub.paper_url | relative_url }}">Paper</a>{% if pub.code_url %} · <a href="{{ pub.code_url }}">Code</a>{% endif %}</p>
+<section id="news" class="home-section" aria-labelledby="news-heading">
+  <h2 id="news-heading">Recently</h2>
+  <div class="event-list">
+    <div class="event-item"><time datetime="2026-10">2026.10</time><p>Champion of the <a href="{{ '/competitions/metafine-2026/' | relative_url }}">MetaFine Open Competition</a> (Team MAI).</p></div>
+    <div class="event-item"><time datetime="2026-04">2026.04</time><p>Papers accepted by <strong>ACL 2026</strong> (Findings +2).</p></div>
+    <div class="event-item"><time datetime="2025-11">2025.11</time><p>Paper accepted by <strong>AAAI 2026</strong>.</p></div>
+    <div class="event-item"><time datetime="2024-01">2024.01</time><p>Paper accepted by <strong>Engineering Applications of Artificial Intelligence</strong>.</p></div>
   </div>
-{% endfor %}
+</section>
+
+{% include competitions.html %}
+{% include publications.html %}
+
+<section id="education" class="home-section" aria-labelledby="education-heading">
+  <h2 id="education-heading">Education & experience</h2>
+  <div class="timeline">
+    <div class="timeline-item"><p class="timeline-date">2026.03 — present</p><div><h3>Southeast University</h3><p>PhD in Software Engineering</p></div></div>
+    <div class="timeline-item"><p class="timeline-date">2024.12 — 2025.12</p><div><h3>Zhejiang University</h3><p>Research Assistant, Computational Social Science Research Center</p></div></div>
+    <div class="timeline-item"><p class="timeline-date">2021.09 — 2024.07</p><div><h3>Central South University</h3><p>M.A. in Computational Sociology</p></div></div>
+    <div class="timeline-item"><p class="timeline-date">2017.09 — 2021.07</p><div><h3>Shanxi University</h3><p>B.M. in Labor and Social Security</p></div></div>
+  </div>
+</section>
+
+<div class="background-columns">
+  <section id="honors" class="home-section" aria-labelledby="honors-heading">
+    <h2 id="honors-heading">Honors & awards</h2>
+    <ul class="plain-list"><li><span class="list-date">2026</span><span><a href="#competitions">MetaFine Open Competition Champion</a><br>Team MAI</span></li><li><span class="list-date">2023</span><span>Outstanding Student of the Year<br>Central South University</span></li><li><span class="list-date">2021</span><span>Outstanding Graduate of Shanxi Province<br>Outstanding Graduation Thesis</span></li></ul>
+  </section>
+  <section id="services" class="home-section" aria-labelledby="services-heading">
+    <h2 id="services-heading">Academic service</h2>
+    <p class="service-entry"><strong>Conference reviewer</strong><br>ACL Rolling Review</p>
+    <p class="service-entry"><strong>Journal reviewer</strong><br>Knowledge-Based Systems</p>
+  </section>
 </div>
 
-<span class="anchor" id="honors"></span>
-
-# <span class="lang-en">Honors and Awards</span><span class="lang-zh">荣誉与奖项</span>
-- *2023.11:* Outstanding Student of the Year, Central South University
-- *2021:* Outstanding Graduate of Shanxi Province, Outstanding Graduation Thesis
-
-<span class="anchor" id="education"></span>
-
-# <span class="lang-en">Education</span><span class="lang-zh">教育背景</span>
-- *2026.03 - present:* PhD in Software Engineering, Southeast University
-- *2024.12 - 2025.12:* Research Assistant, Computational Social Science Research Center, Zhejiang University
-- *2021.09 - 2024.07:* M.A. in Computational Sociology, Central South University
-- *2017.09 - 2021.07:* B.M. in Labor and Social Security, Shanxi University
-
-<span class="anchor" id="services"></span>
-
-# <span class="lang-en">Academic Services</span><span class="lang-zh">学术服务</span>
-- Conference Reviewer: ACL Rolling Review
-- Journal Reviewer: Knowledge-Based Systems (KBS)
-
-<span class="anchor" id="contact"></span>
-
-# <span class="lang-en">Contact</span><span class="lang-zh">联系</span>
-- <span class="lang-en">Email</span><span class="lang-zh">邮箱</span>: [z1ivan@seu.edu.cn](mailto:z1ivan@seu.edu.cn)
-- <span class="lang-en">For collaboration, feel free to contact me with your research topic and timeline.</span><span class="lang-zh">如需合作，欢迎邮件联系并附上研究主题与时间安排。</span>
-- <span class="lang-en">Acknowledgements</span><span class="lang-zh">致谢</span>: [<span class="lang-en">View dedicated page</span><span class="lang-zh">查看独立页面</span>](/acknowledgements/)
+<section id="contact" class="home-section contact-section" aria-labelledby="contact-heading">
+  <h2 id="contact-heading">Let's be in touch.</h2>
+  <p>I welcome conversations and research collaborations.</p>
+  <a class="contact-email" href="mailto:z1ivan@seu.edu.cn">z1ivan@seu.edu.cn</a>
+</section>

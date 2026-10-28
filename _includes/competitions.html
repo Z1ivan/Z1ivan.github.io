@@ -1,0 +1,20 @@
+{% assign competition = site.data.competitions.first %}
+{% assign zh = false %}
+{% assign detail_url = competition.detail_path %}
+{% if page.html_lang == "zh-CN" %}{% assign zh = true %}{% assign detail_url = '/zh' | append: detail_url %}{% endif %}
+<section id="competitions" class="home-section" aria-labelledby="competitions-heading">
+  <h2 id="competitions-heading">{% if zh %}竞赛{% else %}Competitions{% endif %}</h2>
+  <article class="competition-teaser" aria-labelledby="competition-title">
+    <div class="competition-copy">
+      <p class="competition-context">{{ competition.context }}</p>
+      <h3 id="competition-title">{{ competition.title }}</h3>
+      <p class="competition-meta">MAI · {% if zh %}队长{% else %}Team leader{% endif %}</p>
+      <p class="competition-summary">{% if zh %}{{ competition.summary_zh }}{% else %}{{ competition.summary_en }}{% endif %}</p>
+      <div class="text-links">
+        <a href="{{ detail_url | relative_url }}">{% if zh %}比赛详情{% else %}Details{% endif %}</a>
+        <a href="{{ competition.report_url }}">{% if zh %}技术报告{% else %}Technical report{% endif %}</a>
+      </div>
+    </div>
+    {% include task-carousel.html %}
+  </article>
+</section>

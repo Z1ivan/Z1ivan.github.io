@@ -1,0 +1,15 @@
+    <figure class="certificate-figure">
+      <a class="certificate-preview" href="{{ competition.certificate | relative_url }}" data-certificate-open aria-haspopup="dialog" aria-label="{% if zh %}放大查看 MAI 冠军奖状{% else %}View Team MAI's champion certificate{% endif %}">
+        <img src="{{ competition.certificate_image | relative_url }}" alt="{% if zh %}MetaFine Open Competition 冠军奖状，团队 MAI，郑力凡列于团队成员首位{% else %}MetaFine Open Competition champion certificate for Team MAI, listing Lifan Zheng first{% endif %}" width="1800" height="1273" loading="lazy" decoding="async">
+      </a>
+      <figcaption><a href="{{ competition.certificate | relative_url }}" data-certificate-open aria-haspopup="dialog">{% if zh %}查看冠军奖状{% else %}View champion certificate{% endif %}</a><span>{% if zh %}点击放大{% else %}Click to enlarge{% endif %}</span></figcaption>
+    </figure>
+
+<dialog id="certificate-dialog" class="certificate-dialog" aria-labelledby="certificate-dialog-title">
+  <div class="dialog-heading">
+    <h2 id="certificate-dialog-title">{% if zh %}MAI · 冠军奖状{% else %}MAI · Champion certificate{% endif %}</h2>
+    <form method="dialog"><button class="dialog-close" aria-label="{% if zh %}关闭奖状{% else %}Close certificate{% endif %}">×</button></form>
+  </div>
+  <img src="{{ competition.certificate_image | relative_url }}" alt="{% if zh %}MetaFine Open Competition 完整冠军奖状{% else %}Full MetaFine Open Competition champion certificate{% endif %}" width="1800" height="1273" loading="lazy">
+  <a class="certificate-original" href="{{ competition.certificate | relative_url }}" target="_blank" rel="noopener">{% if zh %}查看 PDF 原件{% else %}Open original PDF{% endif %}</a>
+</dialog>

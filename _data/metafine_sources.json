@@ -1,0 +1,58 @@
+{
+  "retrieved_on": "2026-10-28",
+  "competition": "https://robofinemani2026.github.io/competition.html",
+  "leaderboard": "https://robofinemani2026.github.io/leaderboard.html",
+  "technical_report": "https://arxiv.org/abs/2610.36765",
+  "certificate": {
+    "source": "User-provided 01-Champion.pdf",
+    "sha256": "3fb686afc9bbb8cb86d1676bdf8d64dd540c0ae464405d761426833e464fcaf4"
+  },
+  "media": [
+    {
+      "local": "assets/media/metafine/grasp-part.mp4",
+      "source": "https://robofinemani2026.github.io/video/tasks/t1_grasp_part.mp4"
+    },
+    {
+      "local": "assets/media/metafine/letter-assembly.mp4",
+      "source": "https://robofinemani2026.github.io/video/tasks/t5_insert_letter.mp4"
+    },
+    {
+      "local": "images/competitions/grasp-part-poster.webp",
+      "source": "https://metafine.github.io/grasp-cap.jpg",
+      "processing": "Resized and encoded as WebP."
+    },
+    {
+      "local": "images/competitions/letter-assembly-poster.webp",
+      "source": "https://metafine.github.io/perceive-original.jpg",
+      "processing": "Resized and encoded as WebP."
+    },
+    {
+      "local": "assets/media/metafine/grasp-move-mug.mp4",
+      "source": "https://robofinemani2026.github.io/video/tasks/t2_grasp_move_mug.mp4"
+    },
+    {
+      "local": "images/competitions/grasp-move-mug-poster.webp",
+      "source": "https://robofinemani2026.github.io/video/tasks/t2_grasp_move_mug.mp4",
+      "processing": "Frame extracted at 0.4 seconds and encoded as WebP."
+    },
+    {
+      "local": "assets/media/metafine/toggle-switch.mp4",
+      "source": "https://robofinemani2026.github.io/video/tasks/t3_toggle_switch_table.mp4"
+    },
+    {
+      "local": "images/competitions/toggle-switch-poster.webp",
+      "source": "https://robofinemani2026.github.io/video/tasks/t3_toggle_switch_table.mp4",
+      "processing": "Frame extracted at 0.4 seconds and encoded as WebP."
+    },
+    {
+      "local": "assets/media/metafine/sort-blocks.mp4",
+      "source": "https://robofinemani2026.github.io/video/tasks/t4_put_blocks_into_boxes.mp4"
+    },
+    {
+      "local": "images/competitions/sort-blocks-poster.webp",
+      "source": "https://robofinemani2026.github.io/video/tasks/t4_put_blocks_into_boxes.mp4",
+      "processing": "Frame extracted at 0.4 seconds and encoded as WebP."
+    }
+  ],
+  "usage": "Organizer media illustrate competition tasks, not Team MAI policy rollouts."
+}

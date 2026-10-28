@@ -1,44 +1,16 @@
-<div class="masthead">
+{% assign home_path = '/' %}
+{% if page.html_lang == 'zh-CN' %}{% assign home_path = '/zh/' %}{% endif %}
+<header class="masthead">
   <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        {% assign home_anchor = "#about" %}
-        {% if page.url contains "acknowledgements" %}
-          {% if page.html_lang == "zh-CN" %}
-            {% assign home_anchor = "/zh/#about" %}
-          {% else %}
-            {% assign home_anchor = "/#about" %}
-          {% endif %}
-        {% endif %}
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="{{ home_anchor }}"><span class="lang-en">Homepage</span><span class="lang-zh">主页</span></a></li>
-          {% for link in site.data.navigation.main %}
-            {% assign resolved_url = link.url %}
-            {% assign is_ack_page = false %}
-            {% if page.url contains "acknowledgements" %}
-              {% assign is_ack_page = true %}
-            {% endif %}
-            {% assign first_char = link.url | slice: 0, 1 %}
-            {% if first_char == "#" and is_ack_page %}
-              {% if page.html_lang == "zh-CN" %}
-                {% assign resolved_url = "/zh/" | append: link.url %}
-              {% else %}
-                {% assign resolved_url = "/" | append: link.url %}
-              {% endif %}
-            {% endif %}
-            {% if link.url == "acknowledgements/" %}
-              {% if page.html_lang == "zh-CN" %}
-                {% assign resolved_url = "/zh/acknowledgements/" %}
-              {% else %}
-                {% assign resolved_url = "/acknowledgements/" %}
-              {% endif %}
-            {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ resolved_url }}">{{ link.title }}</a></li>
-          {% endfor %}
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
-    </div>
+    <a class="site-signature" href="{{ home_path | relative_url }}#about">{% if page.html_lang == 'zh-CN' %}郑力凡{% else %}Lifan Zheng{% endif %}<span aria-hidden="true">.</span></a>
+    <nav class="primary-navigation" aria-label="{% if page.html_lang == 'zh-CN' %}主导航{% else %}Main navigation{% endif %}">
+      <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">{% if page.html_lang == 'zh-CN' %}菜单{% else %}Menu{% endif %}<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.4"/></svg></button>
+      <ul id="primary-nav" class="masthead__links">
+        {% for link in site.data.navigation.main %}
+        <li><a href="{% unless page.url == home_path %}{{ home_path | relative_url }}{% endunless %}{{ link.url }}">{% if page.html_lang == 'zh-CN' %}{{ link.title_zh }}{% else %}{{ link.title_en }}{% endif %}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {% include site-controls.html %}
   </div>
-</div>
+</header>

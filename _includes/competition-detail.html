@@ -1,0 +1,17 @@
+{% assign competition = site.data.competitions.first %}
+{% assign zh = false %}
+{% if page.html_lang == "zh-CN" %}{% assign zh = true %}{% endif %}
+<div class="competition-detail">
+  <p class="competition-context">{{ competition.context }}</p>
+  <p class="detail-result">{% if zh %}我作为 MAI 队长，带领团队以 {{ competition.score }} 分获得总冠军。{% else %}As team leader, I led MAI to the overall championship with a score of {{ competition.score }}.{% endif %}</p>
+  <p class="detail-summary">{% if zh %}{{ competition.detail_zh }}{% else %}{{ competition.detail_en }}{% endif %}</p>
+  <div class="text-links">
+    <a href="{{ competition.report_url }}">{% if zh %}技术报告{% else %}Technical report{% endif %}</a>
+    <a href="{{ competition.leaderboard_url }}">{% if zh %}官方榜单{% else %}Leaderboard{% endif %}</a>
+    <a href="{{ competition.competition_url }}">{% if zh %}比赛主页{% else %}Competition website{% endif %}</a>
+  </div>
+  <section class="detail-section" aria-labelledby="certificate-heading">
+    <h2 id="certificate-heading">{% if zh %}比赛奖状{% else %}Certificate{% endif %}</h2>
+    {% include competition-certificate.html %}
+  </section>
+</div>

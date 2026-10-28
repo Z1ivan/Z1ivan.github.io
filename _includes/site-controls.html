@@ -1,4 +1,9 @@
-<div class="utility-controls" aria-label="Site controls">
-  <button id="theme-switch-btn" class="utility-btn" type="button">Dark</button>
-  <button id="lang-switch-btn" class="utility-btn" type="button">中文</button>
+{% if page.html_lang == 'zh-CN' %}
+  {% assign other_path = page.url | remove_first: '/zh' %}
+{% else %}
+  {% assign other_path = '/zh' | append: page.url %}
+{% endif %}
+<div class="utility-controls">
+  <button id="theme-switch-btn" class="utility-btn" type="button" aria-pressed="false" hidden>{% if page.html_lang == 'zh-CN' %}深色{% else %}Dark{% endif %}</button>
+  <a id="lang-switch-btn" class="utility-btn" href="{{ other_path | relative_url }}" lang="{% if page.html_lang == 'zh-CN' %}en{% else %}zh-CN{% endif %}" hreflang="{% if page.html_lang == 'zh-CN' %}en{% else %}zh-CN{% endif %}" aria-label="{% if page.html_lang == 'zh-CN' %}Switch to English{% else %}切换到中文{% endif %}">{% if page.html_lang == 'zh-CN' %}EN{% else %}中文{% endif %}</a>
 </div>
