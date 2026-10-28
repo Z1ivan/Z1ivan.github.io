@@ -8,7 +8,7 @@
     <div class="competition-copy">
       <p class="competition-context">{{ competition.context }}</p>
       <h3 id="competition-title">{{ competition.title }}</h3>
-      <p class="competition-meta">MAI · {% if zh %}队长{% else %}Team leader{% endif %}</p>
+      <p class="competition-meta">{% if zh %}MAI 团队 · 队长{% else %}MAI · Team leader{% endif %}</p>
       <p class="competition-summary">{% if zh %}{{ competition.summary_zh }}{% else %}{{ competition.summary_en }}{% endif %}</p>
       <div class="text-links">
         <a href="{{ detail_url | relative_url }}">{% if zh %}比赛详情{% else %}Details{% endif %}</a>

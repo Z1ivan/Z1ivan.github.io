@@ -10,9 +10,9 @@
   role_zh: 队长
   detail_path: /competitions/metafine-2026/
   summary_en: "Evaluation-guided demonstration refinement for fine-grained robot manipulation."
-  summary_zh: "以评测指导示范修订，改进细粒度机器人操作中的 VLA 策略。"
+  summary_zh: "分析机器人操作中的失误，改进训练 VLA 模型所用的示范数据。"
   detail_en: "We fine-tuned a separate VLA policy for each of the five competition tasks. Local evaluation guided demonstration revision and expert continuations from policy-reached states, while checkpoint selection checked performance across instructions."
-  detail_zh: "我们针对五项比赛任务分别微调 VLA 策略，根据本地评测修订示范动作，并从策略到达的状态补充专家接续。在选择模型时，检查各条指令的表现，避免一项改进掩盖另一项退步。"
+  detail_zh: "我们针对五个任务分别微调 VLA 模型。回看本地评测中的失败片段后，我们调整示范动作，并补充模型出错后如何继续完成任务的专家示范。选择模型时，我们会比较各条指令的评测结果，检查模型是否在某些指令上反而退步。"
   competition_url: https://robofinemani2026.github.io/competition.html
   leaderboard_url: https://robofinemani2026.github.io/leaderboard.html
   report_url: https://arxiv.org/abs/2610.36765
@@ -21,7 +21,7 @@
   demos:
     - id: grasp
       title_en: T1 · Grasp Part
-      title_zh: T1 · 部位抓取
+      title_zh: T1 · 抓取指定部位
       description_en: "Official task illustration: the robot grasps the cap of a bottle."
       description_zh: "官方任务示意：机械臂抓取瓶盖。"
       video: /assets/media/metafine/grasp-part.mp4
@@ -29,7 +29,7 @@
       source: https://robofinemani2026.github.io/video/tasks/t1_grasp_part.mp4
     - id: mug
       title_en: T2 · Grasp Part & Move
-      title_zh: T2 · 抓取与移动
+      title_zh: T2 · 抓取并移动杯子
       description_en: "Official task illustration: the robot grasps a mug by its handle and moves it to a target."
       description_zh: "官方任务示意：机械臂抓住杯柄，将杯子移动到目标位置。"
       video: /assets/media/metafine/grasp-move-mug.mp4
@@ -45,7 +45,7 @@
       source: https://robofinemani2026.github.io/video/tasks/t3_toggle_switch_table.mp4
     - id: blocks
       title_en: T4 · Put Blocks into Boxes
-      title_zh: T4 · 积木分类入盒
+      title_zh: T4 · 积木分拣
       description_en: "Official task illustration: the robot places blocks into their matching boxes."
       description_zh: "官方任务示意：机械臂将积木放进对应的盒子。"
       video: /assets/media/metafine/sort-blocks.mp4
@@ -53,9 +53,9 @@
       source: https://robofinemani2026.github.io/video/tasks/t4_put_blocks_into_boxes.mp4
     - id: letters
       title_en: T5 · Letter Ensemble
-      title_zh: T5 · 字母装配
+      title_zh: T5 · 字母拼装
       description_en: "Official task illustration: the robot inserts letters into a matching board."
-      description_zh: "官方任务示意：机械臂将字母插入对应的底板。"
+      description_zh: "官方任务示意：机械臂将字母插入底板上对应的位置。"
       video: /assets/media/metafine/letter-assembly.mp4
       poster: /images/competitions/letter-assembly-poster.webp
       source: https://robofinemani2026.github.io/video/tasks/t5_insert_letter.mp4

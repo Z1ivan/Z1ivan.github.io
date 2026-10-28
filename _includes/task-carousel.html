@@ -4,7 +4,7 @@
     <figure class="task-slide" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} / {{ competition.demos.size }}">
       <video id="metafine-demo-{{ demo.id }}" data-task-demo muted loop playsinline controls preload="none" poster="{{ demo.poster | relative_url }}" aria-label="{% if zh %}{{ demo.description_zh }}{% else %}{{ demo.description_en }}{% endif %}">
         <source src="{{ demo.video | relative_url }}" type="video/mp4">
-        <a href="{{ demo.video | relative_url }}">{% if zh %}查看操作演示{% else %}Watch the task demonstration{% endif %}</a>
+        <a href="{{ demo.video | relative_url }}">{% if zh %}观看演示{% else %}Watch the task demonstration{% endif %}</a>
       </video>
       <figcaption>{% if zh %}{{ demo.title_zh }}{% else %}{{ demo.title_en }}{% endif %}</figcaption>
     </figure>
@@ -18,5 +18,5 @@
       <button class="carousel-next" type="button" aria-controls="metafine-task-track" aria-label="{% if zh %}下一个任务{% else %}Next task{% endif %}"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="m6 3 5 5-5 5" stroke="currentColor" stroke-width="1.4"/></svg></button>
     </div>
   </div>
-  <p class="media-credit">{% if zh %}任务示意：{% else %}Task illustrations: {% endif %}<a href="{{ competition.competition_url }}">MetaFine {% if zh %}主办方{% else %}organizers{% endif %}</a></p>
+  <p class="media-credit">{% if zh %}视频来源：{% else %}Task illustrations: {% endif %}<a href="{{ competition.competition_url }}">MetaFine {% if zh %}官方{% else %}organizers{% endif %}</a></p>
 </div>
