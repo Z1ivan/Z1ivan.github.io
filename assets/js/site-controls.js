@@ -68,16 +68,30 @@ window.addEventListener("DOMContentLoaded", function () {
     var targetIndex = null;
     var scheduled = false;
     if (!track || slides.length < 2 || !controls) return;
+    function visibleCount() {
+      return parseInt(window.getComputedStyle(track).getPropertyValue("--visible-slides"), 10) || 1;
+    }
+    function lastIndex() { return Math.max(0, slides.length - visibleCount()); }
+    function slideStep() {
+      return slides[1].getBoundingClientRect().left - slides[0].getBoundingClientRect().left;
+    }
+    function scrollPosition(target) {
+      return Math.min(target * slideStep(), track.scrollWidth - track.clientWidth);
+    }
+    function readIndex() {
+      return Math.max(0, Math.min(lastIndex(), Math.round(track.scrollLeft / slideStep())));
+    }
     function updateControls() {
       previous.disabled = index === 0;
-      next.disabled = index === slides.length - 1;
-      counter.textContent = (index + 1) + " / " + slides.length;
+      next.disabled = index === lastIndex();
+      var end = Math.min(slides.length, index + visibleCount());
+      counter.textContent = (index + 1) + (end > index + 1 ? "–" + end : "") + " / " + slides.length;
     }
     function moveTo(target, animate) {
-      index = Math.max(0, Math.min(slides.length - 1, target));
+      index = Math.max(0, Math.min(lastIndex(), target));
       targetIndex = index;
       var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      track.scrollTo({ left: index * track.clientWidth, behavior: animate && !reduceMotion ? "smooth" : "auto" });
+      track.scrollTo({ left: scrollPosition(index), behavior: animate && !reduceMotion ? "smooth" : "auto" });
       updateControls();
     }
     previous.addEventListener("click", function () { moveTo(index - 1, true); });
@@ -94,16 +108,16 @@ window.addEventListener("DOMContentLoaded", function () {
       window.requestAnimationFrame(function () {
         scheduled = false;
         if (targetIndex !== null) {
-          if (Math.abs(track.scrollLeft - targetIndex * track.clientWidth) > 1) return;
+          if (Math.abs(track.scrollLeft - scrollPosition(targetIndex)) > 1) return;
           targetIndex = null;
         }
-        index = Math.max(0, Math.min(slides.length - 1, Math.round(track.scrollLeft / track.clientWidth)));
+        index = readIndex();
         updateControls();
       });
     }, { passive: true });
     function resumeManualScroll() {
       targetIndex = null;
-      index = Math.max(0, Math.min(slides.length - 1, Math.round(track.scrollLeft / track.clientWidth)));
+      index = readIndex();
       updateControls();
     }
     track.addEventListener("pointerdown", resumeManualScroll, { passive: true });

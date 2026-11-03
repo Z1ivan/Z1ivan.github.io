@@ -47,13 +47,17 @@ html_lang: zh-CN
   </section>
   <section id="services" class="home-section" aria-labelledby="services-heading">
     <h2 id="services-heading">学术服务</h2>
-    <p class="service-entry"><strong>会议审稿</strong><br>ACL Rolling Review</p>
-    <p class="service-entry"><strong>期刊审稿</strong><br>Knowledge-Based Systems</p>
+    <div class="service-list">
+      <p class="service-entry"><strong>会议审稿</strong><br>ACL Rolling Review</p>
+      <p class="service-entry"><strong>期刊审稿</strong><br>Knowledge-Based Systems</p>
+    </div>
   </section>
 </div>
 
 <section id="contact" class="home-section contact-section" aria-labelledby="contact-heading">
   <h2 id="contact-heading">联系我</h2>
-  <p>如果想交流研究或讨论合作，欢迎给我发邮件。</p>
-  <a class="contact-email" href="mailto:z1ivan@seu.edu.cn">z1ivan@seu.edu.cn</a>
+  <div class="contact-body">
+    <p>如果想交流研究或讨论合作，欢迎给我发邮件。</p>
+    <a class="contact-email" href="mailto:z1ivan@seu.edu.cn">z1ivan@seu.edu.cn</a>
+  </div>
 </section>

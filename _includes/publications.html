@@ -8,7 +8,6 @@
     {% assign ordered_publications = featured_publications | concat: other_publications %}
     {% for pub in ordered_publications %}
     <article class="publication-item{% if pub.selected and pub.image != '' %} publication-featured{% endif %}">
-      <div class="publication-year">{{ pub.year }}</div>
       {% if pub.selected and pub.image != '' %}
       <figure class="publication-figure">
         <a href="{{ pub.image | relative_url }}" target="_blank" rel="noopener" aria-label="{% if zh %}查看 AAAI 2026 论文方法图{% else %}View the AAAI 2026 method figure{% endif %}"><img src="{{ pub.image | relative_url }}" alt="{{ pub.image_alt }}" width="{{ pub.image_width }}" height="{{ pub.image_height }}" loading="lazy" decoding="async"></a>
@@ -17,7 +16,7 @@
       <div class="publication-body">
         <h3 class="publication-title"><a href="{{ pub.paper_url | relative_url }}">{{ pub.title }}</a></h3>
         <div class="publication-meta">{{ pub.authors | markdownify }}</div>
-        <p class="publication-venue">{{ pub.venue }}{% if pub.kind == "report" %}<span class="publication-note">{% if zh %}技术报告{% else %}Technical report{% endif %}</span>{% endif %}</p>
+        <p class="publication-venue"><span class="publication-year">{{ pub.year }}</span> {{ pub.venue }}{% if pub.kind == "report" %}<span class="publication-note">{% if zh %}技术报告{% else %}Technical report{% endif %}</span>{% endif %}</p>
         {% if pub.summary != "" %}<p class="publication-summary">{% if zh and pub.summary_zh %}{{ pub.summary_zh }}{% else %}{{ pub.summary }}{% endif %}</p>{% endif %}
         <div class="text-links">
           <a href="{{ pub.paper_url | relative_url }}">{% if zh %}论文{% else %}Paper{% endif %}</a>

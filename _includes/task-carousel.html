@@ -10,13 +10,15 @@
     </figure>
     {% endfor %}
   </div>
-  <div class="carousel-controls" hidden>
-    <button class="demo-toggle" type="button" aria-controls="metafine-demo-{{ competition.demos | map: 'id' | join: ' metafine-demo-' }}" aria-pressed="false" hidden>{% if zh %}播放{% else %}Play{% endif %}</button>
-    <div class="carousel-pagination">
-      <button class="carousel-prev" type="button" aria-controls="metafine-task-track" aria-label="{% if zh %}上一个任务{% else %}Previous task{% endif %}"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="m10 3-5 5 5 5" stroke="currentColor" stroke-width="1.4"/></svg></button>
-      <span class="carousel-count" aria-live="polite" aria-atomic="true">1 / {{ competition.demos.size }}</span>
-      <button class="carousel-next" type="button" aria-controls="metafine-task-track" aria-label="{% if zh %}下一个任务{% else %}Next task{% endif %}"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="m6 3 5 5-5 5" stroke="currentColor" stroke-width="1.4"/></svg></button>
+  <div class="carousel-toolbar">
+    <p class="media-credit">{% if zh %}演示来源：{% else %}Official demos: {% endif %}<a href="{{ competition.competition_url }}">MetaFine{% if zh %} 官方{% endif %}</a></p>
+    <div class="carousel-controls" hidden>
+      <button class="demo-toggle" type="button" aria-controls="metafine-demo-{{ competition.demos | map: 'id' | join: ' metafine-demo-' }}" aria-pressed="false" hidden>{% if zh %}播放{% else %}Play{% endif %}</button>
+      <div class="carousel-pagination">
+        <button class="carousel-prev" type="button" aria-controls="metafine-task-track" aria-label="{% if zh %}上一个任务{% else %}Previous task{% endif %}"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="m10 3-5 5 5 5" stroke="currentColor" stroke-width="1.4"/></svg></button>
+        <span class="carousel-count" aria-live="polite" aria-atomic="true">1 / {{ competition.demos.size }}</span>
+        <button class="carousel-next" type="button" aria-controls="metafine-task-track" aria-label="{% if zh %}下一个任务{% else %}Next task{% endif %}"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="m6 3 5 5-5 5" stroke="currentColor" stroke-width="1.4"/></svg></button>
+      </div>
     </div>
   </div>
-  <p class="media-credit">{% if zh %}视频来源：{% else %}Task illustrations: {% endif %}<a href="{{ competition.competition_url }}">MetaFine {% if zh %}官方{% else %}organizers{% endif %}</a></p>
 </div>

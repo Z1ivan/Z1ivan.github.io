@@ -51,13 +51,17 @@ redirect_from:
   </section>
   <section id="services" class="home-section" aria-labelledby="services-heading">
     <h2 id="services-heading">Academic service</h2>
-    <p class="service-entry"><strong>Conference reviewer</strong><br>ACL Rolling Review</p>
-    <p class="service-entry"><strong>Journal reviewer</strong><br>Knowledge-Based Systems</p>
+    <div class="service-list">
+      <p class="service-entry"><strong>Conference reviewer</strong><br>ACL Rolling Review</p>
+      <p class="service-entry"><strong>Journal reviewer</strong><br>Knowledge-Based Systems</p>
+    </div>
   </section>
 </div>
 
 <section id="contact" class="home-section contact-section" aria-labelledby="contact-heading">
   <h2 id="contact-heading">Let's be in touch.</h2>
-  <p>I welcome conversations and research collaborations.</p>
-  <a class="contact-email" href="mailto:z1ivan@seu.edu.cn">z1ivan@seu.edu.cn</a>
+  <div class="contact-body">
+    <p>I welcome conversations and research collaborations.</p>
+    <a class="contact-email" href="mailto:z1ivan@seu.edu.cn">z1ivan@seu.edu.cn</a>
+  </div>
 </section>
