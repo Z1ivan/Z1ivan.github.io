@@ -18,7 +18,7 @@ redirect_from:
     <div class="research-line"><span>Research interests</span><ul aria-label="Research interests">{% for interest in site.data.profile.research_interests %}<li>{{ interest }}</li>{% endfor %}</ul></div>
     <div class="text-links hero-links"><a href="mailto:z1ivan@seu.edu.cn">Email</a><a href="https://scholar.google.com/citations?user=GDaqEpYAAAAJ">Scholar</a><a href="https://github.com/z1ivan">GitHub</a><a href="https://orcid.org/0000-0001-6633-4570">ORCID</a><a href="https://www.linkedin.com/in/zheng-lifan-b42369318">LinkedIn</a></div>
   </div>
-  <figure class="hero-portrait"><img src="{{ site.author.avatar | relative_url }}" alt="Lifan Zheng's illustrated portrait" width="480" height="480" loading="eager" fetchpriority="high"><figcaption>Engineering, with a humanist's curiosity.</figcaption></figure>
+  {% include profile-portrait.html %}
 </section>
 
 <section id="news" class="home-section" aria-labelledby="news-heading">

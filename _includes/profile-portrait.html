@@ -1,0 +1,20 @@
+{% assign zh_portrait = false %}
+{% if page.html_lang == 'zh-CN' %}{% assign zh_portrait = true %}{% endif %}
+<div class="hero-visuals">
+  <figure class="hero-portrait">
+    <img src="{{ site.author.avatar | relative_url }}" alt="{% if zh_portrait %}郑力凡的插画头像{% else %}Lifan Zheng's illustrated portrait{% endif %}" width="480" height="480" loading="eager" fetchpriority="high">
+    {% unless zh_portrait %}<figcaption>Engineering, with a humanist's curiosity.</figcaption>{% endunless %}
+  </figure>
+  {% if jekyll.environment == 'production' %}
+    {% assign visitor_map = 'https://www.stats4u.net/c/2602155990-map_w.png?pal=rose&bg=none&kopf=0&zahlen=0' %}
+  {% else %}
+    {% assign visitor_map = '/images/visitor-map-preview.webp' | relative_url %}
+  {% endif %}
+  <figure class="visitor-map">
+    <img src="{{ visitor_map | escape }}" width="300" height="155" decoding="async" referrerpolicy="strict-origin" alt="{% if zh_portrait %}按国家和地区着色的访客分布图{% else %}World map shaded by visitors’ countries and regions{% endif %}">
+    <figcaption>
+      <span>{% if zh_portrait %}访客分布{% else %}Visitor map{% endif %}</span>
+      <a href="https://www.stats4u.net/privacy-embed" aria-label="{% if zh_portrait %}Stats4U 如何根据 IP 估算访问来源{% else %}How Stats4U estimates visitor locations from IP addresses{% endif %}">Stats4U</a>
+    </figcaption>
+  </figure>
+</div>
